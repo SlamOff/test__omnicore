@@ -1,0 +1,401 @@
+header
+	.logo
+		text-align: center
+		h1
+			font-size: 27px
+			line-height: 22px
+			color: #3f3d3d
+			letter-spacing: .07em
+			font-weight: normal
+			font-family: "MyriadPro", sans-serif
+		h2
+			font-weight: normal
+			font-size: 12px
+			color: #3f3d3d
+			letter-spacing: .05em
+			line-height: 14px
+			display: inline-block
+			padding: 0 8px
+			position: relative
+			&:before
+				width: 0
+				height: 1px
+				position: absolute
+				content: ""
+				right: 100%
+				background-color: #ababab
+				top: 44%
+				-webkit-animation-name: logo-animate
+				-moz-animation-name: logo-animate
+				-ms-animation-name: logo-animate
+				-o-animation-name: logo-animate
+				-webkit-animation-duration: .5s
+				-moz-animation-duration: .5s
+				animation-duration: .5s
+				-webkit-animation-timing-function: linear
+				-moz-animation-timing-function: linear
+				animation-timing-function: linear
+				-webkit-animation-delay: 1.5s
+				-moz-animation-delay: 1.5s
+				animation-delay: 1.5s
+				-webkit-animation-fill-mode: forwards
+				-moz-animation-fill-mode: forwards
+				animation-fill-mode: forwards
+			&:after
+				@extend h2:before
+				right: auto
+				left: 100%
+	nav
+		background-color: #252525
+		height: 30px
+		font-weight: 300
+		font-size: 12px
+		letter-spacing: 0.05em
+		a
+			color: #fffafa
+			&:hover
+				color: #fff
+		ul
+			float: left
+			li
+				display: inline-block
+				margin-right: 24px
+				line-height: 30px
+				a
+					display: inline-block
+		.top_phone
+			float: right
+			line-height: 30px
+			position: relative
+			img
+				position: absolute
+				left: -20px
+				top: 9px
+	.mid_header
+		height: 130px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		.logo
+			text-transform: uppercase
+			position: relative
+		.account
+			width: 100%
+			max-width: 460px
+			a.enter
+				padding: 0 20px
+				color: #3f3d3d
+				font-size: 13px
+				font-weight: 300
+				display: inline-block
+				text-transform: uppercase
+				height: 30px
+				line-height: 30px
+				transition: .5s all
+				position: relative
+				box-sizing: border-box
+				&:before
+					content: ""
+					position: absolute
+					box-sizing: inherit
+					width: 0
+					height: 0
+					border: 1px solid transparent
+					top: 0
+					left: 0
+				&:after
+					content: ""
+					position: absolute
+					box-sizing: inherit
+					width: 0
+					height: 0
+					border: 1px solid transparent
+					bottom: 0
+					right: 0
+				&:hover:before
+					width: 100%
+					height: 100%
+					border-top-color: #e5e4e2
+					border-right-color: #e5e4e2
+					transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+				&:hover:after
+					width: 100%
+					height: 100%
+					border-bottom-color: #e5e4e2
+					border-left-color: #e5e4e2
+					transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+				&:nth-of-type(3)
+					padding: 0 10px 0 50px
+			.cart
+				position: relative
+				display: inline-block
+				img
+					position: absolute
+					left: -25px
+					top: 4px
+			.btn_black
+				display: inline-block
+				width: 100%
+				max-width: 100px
+				padding: 5px 0 6px
+				float: right	
+			.search
+				width: 100%
+				margin-top: 15px
+				border: 1px solid #e5e4e2
+				position: relative
+				height: 40px
+				input
+					border: 0
+					height: 100%
+					width: 100%
+					font-weight: 300
+					font-size: 13px
+					letter-spacing: .05em
+					text-indent: 20px
+					background: none
+					&[type="submit"]
+						position: absolute
+						-webkit-appearance: none
+						
+						border: 0
+						width: 40px
+						top: 0
+						z-index: 1
+						right: 0
+						background-image: url(../img/search_icon.png)
+						background-position: center
+						background-repeat: no-repeat
+
+	.menu
+		background-color: $bgColor
+		display: inline-block
+		margin-bottom: 25px
+		ul
+			li
+				color: #3f3d3d
+				text-transform: uppercase
+				font-weight: 300
+				font-size: 16px
+				display: inline-block
+				padding: 14px 32px
+			li.active
+				background-color: #e4e4e4
+main
+	background-color: $bgColor
+	padding: 35px 0
+	.slider_wrapper
+		position: relative
+		.top_slider
+			height: 610px
+			text-align: center
+			padding-top: 8.2rem
+			background-color: #999
+			transition: all .5s
+			background-size: 100% 100%
+			.main_trigger
+				width: 27.3rem
+				height: 27.3rem
+				margin: 0 auto
+				border: solid 2px #fff
+				margin-bottom: 5.5rem
+				padding: 5px
+				text-transform: uppercase
+				&_inner
+					width: 100%
+					height: 100%
+					border: 1px solid #fff
+					padding: 3rem 0
+					p
+						color: #fff
+						font-size: 2rem
+						padding: 0 15px
+						position: relative
+						z-index: 2
+						display: inline-block
+						font-weight: bold
+						&:last-of-type:before
+							width: 32px
+							height: 1px
+							background-color: #fff
+							position: absolute
+							content: ""
+							left: 100%
+							top: 7px
+						&:last-of-type:after
+							@extend p:last-of-type:before
+							left: auto
+							right: 100%
+						span
+							display: inline-block
+							width: 100%
+							position: absolute
+							height: 100%
+							left: 0
+							top: 0
+							&:before
+								width: 60px
+								height: 1px
+								background-color: #fff
+								position: absolute
+								content: ""
+								left: 100%
+								bottom: 7px
+							&:after
+								@extend span:before
+								left: auto
+								right: 100%
+					h4
+						margin-top: 2rem
+						font-weight: bold
+						color: #000
+						font-size: 3.2rem
+						span
+							font-size: 2.4rem
+					h3
+						margin: 20px 0
+						font-size: 58px
+						color: #000
+						font-weight: 900
+			.slider_btn
+				background-color: #f09d66
+				font-weight: 900
+				color: #fff
+				text-transform: uppercase
+				padding: 15px 35px
+				display: inline-block
+				transition: .5s all
+				position: relative
+				box-sizing: border-box
+				&:before
+					content: ""
+					position: absolute
+					box-sizing: inherit
+					width: 0
+					height: 0
+					border: 2px solid transparent
+					top: 0
+					left: 0
+				&:after
+					content: ""
+					position: absolute
+					box-sizing: inherit
+					width: 0
+					height: 0
+					border: 2px solid transparent
+					bottom: 0
+					right: 0
+				&:hover:before
+					width: 100%
+					height: 100%
+					border-top-color: #e5e4e2
+					border-right-color: #e5e4e2
+					transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+				&:hover:after
+					width: 100%
+					height: 100%
+					border-bottom-color: #e5e4e2
+					border-left-color: #e5e4e2
+					transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+		.dots
+			text-align: center
+			position: absolute
+			bottom: 45px
+			width: 100%
+			.dot
+				width: 18px
+				height: 18px
+				border-radius: 50%
+				background-color: #6c6766
+				cursor: pointer
+				display: inline-block
+				margin: 0 5px
+			.dot.active
+				background-color: #000
+.toggle_btn 
+	display: none
+	height: 30px
+	width: 30px
+	position: absolute
+	z-index: 200
+	bottom: -44px
+	right: 0
+	left: 0
+	margin: 0 auto
+	background-color: #f09d66
+	-webkit-border-radius: 3px
+	-moz-border-radius: 3px
+	-ms-border-radius: 3px
+	-o-border-radius: 3px
+	border-radius: 3px
+	.sandwich
+		width: 30px
+		height: 30px
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		span
+			height: 2px
+			width: 24px
+			position: relative
+			border-radius: 2px
+			left: 3px
+			background-color: #fff
+			display: block
+		span.sw-topper
+			top: 6px
+			transition: transform 0.3s, top 0.2s
+		span.sw-bottom
+			top: 12px
+			transition: transform 0.3s, top 0.2s
+			transition-delay: 0.1s, 0s
+		span.sw-footer
+			top: 18px
+			transition: all 0.5s
+			transition-delay: 0.1s
+
+	.sandwich.active .sw-topper
+		top: 15px
+		-moz-transform: rotate(-45deg)
+		transform: rotate(-45deg)
+
+	.sandwich.active .sw-bottom
+		top: 13px
+		-moz-transform: rotate(45deg)
+		transform: rotate(45deg)
+	.sandwich.active .sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+@-webkit-keyframes logo-animate
+	from
+		width: 0
+	to
+		width: 40px
+@-moz-keyframes logo-animate
+	from
+		width: 0
+	to
+		width: 40px
+@-ms-keyframes logo-animate
+	from
+		width: 0
+	to
+		width: 40px
+@-o-keyframes logo-animate
+	from
+		width: 0
+	to
+		width: 40px
+@keyframes logo-animate
+	from
+		width: 0
+	to
+		width: 40px
+.after_cart,
+.after_reg
+	display: none

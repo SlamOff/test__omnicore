@@ -1,0 +1,325 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1700px)
+	.product
+		height: 720px
+		&__wrapper
+			padding-top: 10rem
+@media only screen and (max-width : 1540px)
+	.product
+		height: 620px
+		&__wrapper
+			padding-top: 5rem
+		&__slider img
+			margin: 0 auto 5rem
+@media only screen and (max-width : 1360px)
+	.product
+		height: 580px
+		&__wrapper
+			padding-top: 3rem
+		&__slider img
+			margin: 0 auto 3rem
+	html
+		font-size: 9.5px
+	.arrivals .container .col-lg-3 .arrivals__item img
+		max-height: 367px
+	main
+		.slider_wrapper
+			.top_slider
+				height: 550px
+			.dots
+				bottom: 15px
+	.news .news__image
+		width: 100%
+@media only screen and (max-width : 1199px)
+	html
+		font-size: 9px
+	main .slider_wrapper .top_slider
+		height: 500px
+	header .menu ul li
+		font-size: 14px
+		padding: 12px 26px
+	.arrivals .container .col-lg-3 .arrivals__item img
+		max-height: 295px
+	.arrivals .container .col-lg-3 .arrivals__item .arrivals__size span
+		padding: 2px 10px
+	.product
+		height: 480px
+		&__slider
+			img
+				width: 100%
+			h5
+				font-size: 2rem
+			span
+				font-size: 2.4rem
+	footer .footer_wrapper .footer_col .subscribe form
+		width: 320px
+	.contact__name_group input
+		max-width: 450px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+	html
+		font-size: 8.5px
+	.arrivals .container .col-lg-3 .arrivals__item img
+		max-height: 215px
+	.arrivals .container .col-lg-3 .arrivals__item .arrivals__desc p
+		font-size: 12px
+	.arrivals .container .col-lg-3 .arrivals__item .arrivals__size span
+		padding: 2px 8px
+	.arrivals .container .col-lg-3 .arrivals__item .arrivals__size a
+		padding: 10px 0
+	main .slider_wrapper .top_slider
+		height: 400px
+		padding-top: 3rem
+	main .slider_wrapper .top_slider .slider_btn
+		padding: 10px 35px
+	main .slider_wrapper .top_slider .main_trigger
+		width: 25rem
+		height: 25rem
+		margin-bottom: 3rem
+	main .slider_wrapper .top_slider .main_trigger_inner
+		padding: 2rem 0
+	main .slider_wrapper .top_slider .main_trigger_inner h3
+		font-size: 50px
+		margin: 15px 0
+	header .menu ul li
+		padding: 8px 12px
+	header .mid_header .account .search
+		float: right
+		max-width: 380px
+	.product
+		height: 380px
+		.product__wrapper .product_dots .product_dot
+			margin: 0 12px
+	.brand .container .brand_wrapper
+		//justify-content: space-around
+		flex-wrap: wrap
+	.brand_item
+		margin-bottom: 30px
+		width: 30%
+		text-align: center
+	.product__wrapper
+		text-align: center
+		.product_dots
+			bottom: -5rem
+	.news__desc h5
+		line-height: 2rem
+	.news__author span
+		padding: 0 17px
+		font-size: 12px
+		letter-spacing: .05em
+	.contact__name_group input
+		max-width: 345px
+	footer .footer_wrapper
+		flex-wrap: wrap
+		padding-right: 100px
+	.footer_col:last-of-type
+		margin-top: 30px
+	body
+		border: 0
+	footer:before,
+	footer:after
+		display: none
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	html
+		font-size: 8px
+	.arrivals .container .col-lg-3 .arrivals__item .arrivals__size
+		display: inline-block
+		margin: 0
+	.arrivals .container .col-lg-3 .arrivals__item
+		text-align: center
+		padding: 0
+		margin-bottom: 50px
+		&:hover
+			box-shadow: none
+			position: static
+			background-color: transparent
+			.arrivals__size
+				display: inline-block
+		img
+			max-height: 500px
+			margin-left: auto
+			margin-right: auto
+	.arrivals .container .col-lg-3 .arrivals__item .arrivals__desc
+		height: auto
+		margin-bottom: 10px
+	.product
+		background-image: none
+		height: auto
+		&__wrapper
+			padding: 8rem 0
+			margin-bottom: 4rem
+			.product_dots
+				bottom: 30px
+	.contact__name_group
+		display: block
+		input
+			width: 100%
+			max-width: 1000px
+	.contact form
+		width: 100%
+		max-width: 380px
+		margin-left: auto
+		margin-right: auto
+		textarea
+			height: 20rem
+	.news
+		padding-bottom: 30px
+		.col-sm-4
+			text-align: center
+			margin-bottom: 40px
+			.btn_black
+				margin: 0 auto
+	main .slider_wrapper
+		.top_slider
+			background-image: none!important
+			height: auto
+			padding: 30px 0
+		.dots
+			display: none
+	header .menu ul li
+		padding: 8px
+	main .slider_wrapper .top_slider .main_trigger_inner p span:before, main .slider_wrapper .top_slider .main_trigger_inner p span:after,
+	main .slider_wrapper .top_slider .main_trigger_inner p:last-of-type:before, main .slider_wrapper .top_slider .main_trigger_inner p:last-of-type:after
+		display: none
+	main .slider_wrapper .top_slider .main_trigger
+		width: 28rem
+		height: 28rem
+	.brand
+		padding-bottom: 60px
+
+@media only screen and (max-width : 660px)
+	header	
+		.mid_header
+			height: auto
+			padding: 20px 0
+			.logo
+				width: 100%
+			.account
+				text-align: right
+				width: 100%
+				.btn_black
+					display: block
+					margin-top: 5px
+				.search
+					max-width: 220px
+					height: 30px
+				a.enter
+					padding-left: 40px
+					padding-right: 0
+				a.enter:nth-of-type(3)
+					padding: 0 0 0 50px
+		.menu
+			display: none
+			ul li
+				display: block
+				text-align: center
+	.toggle_btn
+		display: block
+	.after_cart
+		display: block
+
+
+@media only screen and (max-width : 580px)
+	.brand_item
+		width: 50%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.brand_item
+		width: 100%
+	header
+		nav
+			height: auto
+			text-align: center
+			ul
+				float: none
+			.top_phone
+				float: none
+				img
+					display: none
+		.logo
+			h1
+				font-size: 24px
+			h2
+				font-size: 10px
+			.toggle_btn
+				bottom: -47px
+	footer .footer_wrapper .footer_col .social__item
+		height: 40px
+		width: 40px
+		line-height: 47px
+
+@media only screen and (max-width : 380px)
+	header	
+		.mid_header
+			display: block
+			.logo
+				margin-bottom: 20px
+				.toggle_btn
+					left: 0
+					top: 0
+					bottom: auto
+					right: auto
+			.account
+				text-align: center
+				a.enter
+					padding: 0 20px
+					margin-bottom: 5px
+				a.enter:nth-of-type(3)
+					padding: 0
+					margin-right: 20px
+					margin-bottom: 7px
+				.btn_black
+					margin-top: 0
+					float: none
+					display: inline-block
+				.search
+					display: inline-block
+					float: none
+					margin-top: 0
+	.after_reg
+		display: block
+	.after_cart
+		display: none
+	footer .footer_wrapper .footer_col
+		margin-bottom: 3rem
+		.subscribe form
+			width: 280px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+
+
+@media only screen and (min-width : 1200px)
+
+
+@media only screen and (min-width : 1360px)
+	.container
+		width: 1300px

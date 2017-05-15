@@ -1,0 +1,59 @@
+$bgColor: #f3f3f3
+body
+	font: 2rem "Roboto", sans-serif
+	min-width: 320px
+	border: 30px solid $bgColor
+	border-top: 0
+	position: relative
+	margin: 0 auto
+	overflow-x: hidden
+	.main_wrapper
+		background-image: linear-gradient(to left, #fff, #f3f3f3)
+h1,h2,h3,h4,h5,h6,ul,body,p
+	margin: 0
+ul
+	padding: 0
+	list-style-type: none
+a
+	text-decoration: none
+button
+	border: none
+	background: none
+button, button:focus, button:hover, input, .thumbnail, .slick-slide, img, ul, li, a, a:focus, a:visited, a:hover, div, div:focus textarea, textarea:focus
+	outline: none
+	text-decoration: none
+section
+	padding: 4rem 0
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		width: 100%
+		height: 30px
+		left: 0
+		bottom: 0
+		background-color: #f3f3f3
+section h4
+	font-size: 37px
+	font-weight: bold
+	color: #1a2631
+	text-shadow: -2px 4px 3px rgba(0,0,2,.11)
+	text-transform: uppercase
+	text-align: center
+	letter-spacing: .125em
+.btn_black
+	text-transform: uppercase
+	background-color: #000
+	color: #fff
+	font-weight: 900
+	letter-spacing: 0.05em
+	display: block
+	max-width: 273px
+	text-align: center
+	font-size: 14px
+	padding: 15px 0
+	border: 1px solid #000
+	transition: all .3s
+	&:hover
+		background-color: #fff
+		color: #000

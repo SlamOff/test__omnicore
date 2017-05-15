@@ -1,0 +1,54 @@
+.arrivals
+	.container
+		padding: 0 30px
+		h4
+			margin-bottom: 24px
+		.col-lg-3
+			padding: 0
+			.arrivals__item
+				text-transform: uppercase
+				padding: 15px
+				transition: all .4s
+				&:hover
+					box-shadow: 0 0 50px rgba(0,0,0,.2)
+					position: absolute
+					z-index: 2
+					background-color: #fff
+					.arrivals__size
+						display: block
+					.arrivals__desc
+						height: auto
+				.arrivals__size
+					text-transform: capitalize
+					display: none
+					font-size: 14px
+					margin-top: 10px
+					span
+						border: 1px solid #000
+						display: block
+						float: left
+						cursor: pointer
+						padding: 2px 16px
+						border-right: 0
+						&:first-child
+							border: 0
+							padding-left: 8px
+						&:last-of-type
+							border-right: 1px solid #000
+					a
+						margin-top: 20px
+				img
+					width: 100%
+					max-width: 273px
+					display: block
+					max-height: 392px
+				.arrivals__desc
+					height: 50px
+					p
+						margin-top: 6px
+						font-weight: 900
+						font-size: 14px
+						letter-spacing: .05em
+					span
+						font-size: 16px
+

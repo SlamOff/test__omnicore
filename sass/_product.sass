@@ -1,0 +1,41 @@
+.product
+	background-image: url("../img/product_main.jpg")
+	background-repeat: no-repeat
+	background-size: 50% 99%
+	background-position: left top
+	height: 802px
+	padding: 0
+	&__wrapper
+		position: relative
+		padding-top: 18rem
+		.product_dots
+			position: absolute
+			bottom: -8rem
+			width: 100%
+			text-align: center
+			.product_dot
+				width: 10px
+				height: 10px
+				border-radius: 50%
+				background-color: #cacaca
+				cursor: pointer
+				display: inline-block
+				margin: 0 15px
+			.product_dot.active
+				background-color: #000
+	&__slider
+		background-repeat: no-repeat
+		img
+			display: block
+			max-width: 326px
+			margin: 0 auto 9rem
+		h5
+			font-weight: 900
+			font-size: 22px
+			color: #000
+			text-transform: uppercase
+			letter-spacing: .05em
+			line-height: 34px
+		span
+			font-size: 28px
+			color: #000
